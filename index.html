@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- ============================================================
+     EDITA AQUI: pon tu nombre en el titulo de la pestaña
+     ============================================================ -->
+<title>Emmanuel Francisco Martinez Becerra · Portafolio</title>
+<meta name="description" content="Portafolio de [DSM4-2 — Aplicaciones Web, Django + MySQL + Tailwind + Render." />
+<link rel="icon" href="data:,">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'},
+          ink: '#0f172a'
+        },
+        fontFamily: {
+          sans: ['Inter','ui-sans-serif','system-ui','sans-serif'],
+          mono: ['"JetBrains Mono"','ui-monospace','SFMono-Regular','monospace']
+        }
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
+  code, .font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+</style>
+</head>
+<body class="bg-slate-50 text-ink antialiased">
+
+<!-- ============================================================================
+     AVISO PARA EL ALUMNO — BORRA ESTE BLOQUE COMPLETO ANTES DE PUBLICAR
+     Instrucciones:
+       1) Busca todo lo que esté entre corchetes, ej. [NOMBRE COMPLETO DEL ALUMNO],
+          y reemplázalo por tu información real.
+       2) Sustituye cada [URL-UNIDAD-X] por la URL real de Render de esa entrega.
+       3) Al terminar de personalizarlo, borra esta franja amarilla (todo el <div id="aviso-alumno">)
+          y publica este mismo archivo como tu portafolio final de la Unidad 4.
+<!============================================================================ -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="#inicio" class="font-extrabold text-brand-700">
+        <!-- EDITA AQUI: puedes cambiar "AW" por tus iniciales -->
+        EB
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#sobre-mi" class="hover:text-brand-700">Sobre mí</a>
+        <a href="#stack" class="hover:text-brand-700">Stack</a>
+        <a href="#proyecto" class="hover:text-brand-700">Proyecto</a>
+        <a href="#entregas" class="hover:text-brand-700">Entregas</a>
+        <a href="#contacto" class="hover:text-brand-700">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     EDITA AQUI: SECCIÓN DE DATOS DEL ALUMNO (id="datos-alumno")
+     Reemplaza nombre, matrícula, grupo y la frase de presentación.
+     ============================================================ -->
+<section id="inicio" class="relative overflow-hidden bg-ink">
+  <div class="absolute inset-0 bg-gradient-to-br from-brand-900 via-ink to-slate-900"></div>
+  <div class="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-brand-600/30 blur-3xl"></div>
+  <div id="datos-alumno" class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+
+      <!-- EDITA AQUI: si tienes foto, reemplaza este círculo por <img src="tu-foto.jpg" class="h-28 w-28 rounded-full object-cover"> -->
+      <div>
+        <p class="h-28 w-28 rounded-full object-cover">
+          <img src="img/90646895-36a7-4921-bef2-fdb0c1d55ea3.jpg" 
+          style="width: 300px; height: 300; object-fit: cover; border-radius: 25%;">></p>
+      </div>
+
+      <div class="text-center sm:text-left">
+        <p class="text-brand-300 text-xs font-semibold uppercase tracking-wide">Portafolio · Aplicaciones Web</p>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Emmanuel Francisco Martinez Becerra</h1>
+        <p class="text-slate-300 mt-2">Matrícula: <span class="text-white font-semibold">25311033</span> · Grupo: <span class="text-white font-semibold">DSM4-2</span></p>
+        <p class="mt-4 text-slate-300 max-w-xl">Amante de Megaman y futuro programador en proceso</p>
+
+        <div class="mt-6 flex flex-wrap justify-center sm:justify-start gap-3">
+          <!-- EDITA AQUI: pon la URL real de tu perfil de GitHub -->
+          <a href="https://github.com/martinezbecerradsm3" class="rounded-lg bg-white text-ink font-semibold px-4 py-2 text-sm hover:bg-slate-100 transition">GitHub</a>
+          <!-- EDITA AQUI: pon la URL real de tu LinkedIn (opcional, puedes borrar el botón si no tienes) -->
+          <a href="[URL-LINKEDIN]" class="rounded-lg bg-white/10 text-white font-semibold px-4 py-2 text-sm border border-white/20 hover:bg-white/20 transition">LinkedIn</a>
+          <a href="#entregas" class="rounded-lg bg-brand-600 text-white font-semibold px-4 py-2 text-sm hover:bg-brand-500 transition">Ver mis entregas →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE MÍ ===================== -->
+<section id="sobre-mi" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide">Sobre mí</p>
+  <h2 class="text-2xl font-extrabold mt-1">Un poco más de contexto</h2>
+  <!-- EDITA AQUI: reemplaza este párrafo por tu propia historia (3-5 líneas) -->
+  <p class="mt-4 text-slate-600 max-w-2xl">
+    Amante de los videojuegos y programador en proceso, graduado de la preparatoria Cobach V, 
+    Gran interes en la creacion de software con esperanzas de graduarse en un futuro
+  </p>
+</section>
+
+<!-- ===================== STACK TECNOLÓGICO ===================== -->
+<section id="stack" class="bg-white border-y border-slate-200">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide">Stack</p>
+    <h2 class="text-2xl font-extrabold mt-1">Tecnologías que usé en este curso</h2>
+    <!-- EDITA AQUI: puedes agregar o quitar tecnologías si aprendiste algo extra -->
+    <div class="mt-6 flex flex-wrap gap-3">
+      <span class="px-4 py-2 rounded-full bg-orange-50 text-orange-700 text-sm font-semibold border border-orange-200">HTML5 semántico</span>
+      <span class="px-4 py-2 rounded-full bg-sky-50 text-sky-700 text-sm font-semibold border border-sky-200">Tailwind CSS</span>
+      <span class="px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-200">Django (Python)</span>
+      <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-200">MySQL en la nube</span>
+      <span class="px-4 py-2 rounded-full bg-violet-50 text-violet-700 text-sm font-semibold border border-violet-200">Render</span>
+      <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm font-semibold border border-slate-300">Git + GitHub</span>
+      <!-- EDITA AQUI (opcional): agrega tu propia etiqueta, ej: -->
+      <!-- <span class="px-4 py-2 rounded-full bg-rose-50 text-rose-700 text-sm font-semibold border border-rose-200">[Otra tecnología]</span> -->
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROYECTO INTEGRADOR ===================== -->
+<section id="proyecto" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide">Proyecto Integrador</p>
+  <!-- EDITA AQUI: pon el nombre que le diste a tu proyecto -->
+  <h2 class="text-2xl font-extrabold mt-1">BiblioControl</h2>
+  <!-- EDITA AQUI: describe en 2-4 líneas qué hace tu proyecto y qué problema resuelve -->
+  <p class="mt-4 text-slate-600 max-w-2xl">
+    Servicio de gestion de ventas sobre libbros, registra, busca, modifica, borra tanto productos, 
+    clientes, usuarios y ventas. Seleccionado por experiencia previa en anteriores proyectos basados en este sistema.
+  </p>
+
+  <div class="mt-8 rounded-2xl border border-slate-200 overflow-hidden">
+    <!-- EDITA AQUI: reemplaza por una captura de pantalla real de tu proyecto -->
+    <!-- <img src="captura-proyecto.png" class="w-full object-cover" alt="Captura de mi proyecto"> -->
+    <div class="aspect-video bg-slate-100 flex items-center justify-center text-slate-400 text-sm">
+      [Coloca aquí una captura de pantalla de tu proyecto funcionando]
+    </div>
+  </div>
+
+  <div class="mt-6">
+    <!-- EDITA AQUI: pon la URL final de tu proyecto (la misma de la Unidad 4) -->
+    <a href="[URL-UNIDAD-4]" class="inline-flex items-center gap-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-3 text-sm transition">
+      Ver proyecto en vivo →
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     EDITA AQUI: ENLACES DE ENTREGAS POR UNIDAD (4 enlaces)
+     Reemplaza cada [URL-UNIDAD-X] por la URL real de Render.
+     ============================================================ -->
+<section id="entregas" class="bg-ink text-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <p class="text-brand-300 font-semibold text-xs uppercase tracking-wide">Evidencia por unidad</p>
+    <h2 class="text-2xl font-extrabold mt-1">Mis 4 entregas publicadas</h2>
+    <p class="mt-3 text-slate-300 max-w-2xl">Cada enlace lleva a la versión pública que entregué al cerrar esa Unidad, sobre el mismo proyecto.</p>
+
+    <ul class="mt-8 grid sm:grid-cols-2 gap-4">
+      <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
+        <p class="text-xs font-bold text-orange-300 uppercase">Unidad 1</p>
+        <p class="font-semibold mt-1">Portafolio estático (HTML + Tailwind)</p>
+        <a href="https://ine-personal-mbef.onrender.com" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">[URL-UNIDAD-1]</a>
+      </li>
+      <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
+        <p class="text-xs font-bold text-emerald-300 uppercase">Unidad 2</p>
+        <p class="font-semibold mt-1">App Django + MySQL en Render</p>
+        <a href="[URL-UNIDAD-2]" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">[URL-UNIDAD-2]</a>
+      </li>
+      <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
+        <p class="text-xs font-bold text-blue-300 uppercase">Unidad 3</p>
+        <p class="font-semibold mt-1">CRUD dinámico con login y sesiones</p>
+        <a href="[URL-UNIDAD-3]" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">[URL-UNIDAD-3]</a>
+      </li>
+      <li class="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition">
+        <p class="text-xs font-bold text-purple-300 uppercase">Unidad 4</p>
+        <p class="font-semibold mt-1">Proyecto integrador final</p>
+        <a href="[URL-UNIDAD-4]" class="text-sm text-brand-300 hover:underline mt-2 inline-block break-all">[URL-UNIDAD-4]</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section id="contacto" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <p class="text-brand-600 font-semibold text-xs uppercase tracking-wide">Contacto</p>
+  <h2 class="text-2xl font-extrabold mt-1">Hablemos</h2>
+  <!-- EDITA AQUI: pon tu correo, y si quieres, teléfono o red social adicional -->
+  <div class="mt-6 flex flex-wrap gap-4 text-sm">
+    <a href="mailto:a25311033@uthermosillo.edu.mx" class="rounded-lg border border-slate-300 px-4 py-2 font-semibold text-slate-700 hover:border-brand-400 hover:text-brand-700 transition">✉️ Correo: a25311033@uthermosillo.edu.mx</a>
+    <a href="https://github.com/martinezbecerradsm3" class="rounded-lg border border-slate-300 px-4 py-2 font-semibold text-slate-700 hover:border-brand-400 hover:text-brand-700 transition">GitHub: Martinez Becerra Emmanuel Francisco</a>
+  </div>
+</section>
+
+<footer class="bg-slate-100 border-t border-slate-200 text-slate-500 text-sm">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-2">
+    <!-- EDITA AQUI: pon tu nombre en el copyright -->
+    <p>© 2026 Emmanuel Francisco Martinez Becerra. Todos los derechos reservados.</p>
+    <p>Aplicaciones Web · Docente: Bernardo Prado Díaz</p>
+  </div>
+</footer>
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl504927'},{'dcenter':'p3'},{'cp_id':'10837813'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
